@@ -1,6 +1,9 @@
-name: workflow 2
+name: tag_workflow
 
-on: [push]
+on: 
+    push:
+        tags:
+            - 'v*.*.*'
 
 jobs:
   build:
